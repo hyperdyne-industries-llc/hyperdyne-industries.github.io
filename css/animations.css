@@ -1,0 +1,41 @@
+@keyframes slide-in-l {
+	0% {
+		transform: translateX(-32%);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes floating {
+	0% {
+		filter: drop-shadow(2px 3px 4px black);
+	}
+
+	100% {
+		filter: drop-shadow(4px 5px 6px black);
+		transform: translateY(-1%);
+	}
+}
+
+:root {
+
+	--floating: floating ease-in-out 1600ms infinite alternate-reverse;
+
+	--h-logo-animation: slide-in-l 220ms ease-in 20ms forwards, 
+		fade-in 220ms linear 100ms forwards,
+		var(--floating);
+
+	--h-hyper-animation: fade-in 220ms linear 200ms forwards;
+}

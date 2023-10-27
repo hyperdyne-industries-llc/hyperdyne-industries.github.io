@@ -1,0 +1,23 @@
+@media all and (orientation: landscape) {
+
+	:root {
+
+		--section-flex: row;
+		--section-height: 60vh;
+	}
+}
+
+@media all and (orientation: portrait) {
+
+	:root {
+
+		--section-flex: column;
+		--section-height: 80vh;
+	}
+}
+
+:root {
+
+	--section-even-color: #202020;
+	--section-odd-color: #404040;
+}
