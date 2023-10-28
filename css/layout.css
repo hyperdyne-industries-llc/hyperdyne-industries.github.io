@@ -62,15 +62,15 @@ section div ul {
 	flex-flow: column;
 	align-items: center;
 	justify-content: space-evenly;
-	height: 60%;
+	height: 100%;
 	margin: 0;
-	padding: 10% 0;	
-	font-size: 1.2em;	
-	font-family: monospace;
-	background: #101010;
-	border: 1px solid grey;
-	border-radius: 4%;
+	padding: 0;
+	font-size: 1.2em;
+	font-family: monospace;		
 }
+
+section:nth-child(even) div ul { border-right: 1px solid grey; }
+section:nth-child(odd) div ul { border-left: 1px solid grey; }
 
 section div ul li {
 	list-style-type: none;

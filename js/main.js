@@ -1,1 +1,2 @@
-document.onscroll = (ev) => { document.body.dataset.scroll = window.scrollY }
+let calc_scroll = () => Math.floor((3.75 * (0.25 + Math.floor(window.scrollY) / Math.floor(document.body.scrollHeight - window.innerHeight))) - 0.75)
+document.onscroll = (ev) => { document.body.dataset.scroll = calc_scroll() }
