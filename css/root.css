@@ -1,9 +1,35 @@
+:root {
+	--phi: 1.618;
+	--section-even-color: #1a1a1a;
+	--section-odd-color: #303030;
+}
+
 @media all and (orientation: landscape) {
 
 	:root {
-
+		
 		--section-flex: row;
-		--section-height: 70vh;
+		--section-height: 72vh;
+		--section-div-height: 36vh;
+		--section-div-width: 40vw;
+		--section-div-justify: flex-start;
+		--section-div-border: 1px solid white;
+		--section-even-flow: row-reverse;
+		--flex-align-odd: flex-end;
+		--flex-align-even: flex-start;
+		--flex-header: flex-end;
+		--font-size-heading: 1.4em;
+		--logo-height: calc((24vh + 24vw) / var(--phi));
+		--logo-width: auto;
+		--heading-height: var(--section-div-height);
+		--heading-width: auto;
+		--heading-border: none;
+		--heading-text-align: auto;
+		--font-size: 1.2em;
+		--list-height: default;
+		--list-line-height: auto;
+		--footer-font-size: 0.8em;
+		--contact-icon-height: 48px;
 	}
 }
 
@@ -12,12 +38,24 @@
 	:root {
 
 		--section-flex: column;
-		--section-height: 80vh;
+		--section-height: 76vh;
+		--section-div-height: auto;
+		--section-div-width: 100vw;
+		--section-div-justify: center;
+		--section-even-flow: column;
+		--section-div-border: none;
+		--flex-align-odd: center;
+		--flex-align-even: var(--flex-align-odd);
+		--flex-header: center;
+		--font-size-heading: 2.4em;
+		--logo-width: calc((24vw + 32vh) / var(--phi));
+		--logo-height: auto;
+		--heading-height: 12vh;
+		--heading-border: 1px solid white;
+		--font-size: 2.2em;		
+		--list-height: calc((var(--section-height) / 4) * var(--phi));
+		--list-line-height: var(--font-size);
+		--footer-font-size: 1.4em;
+		--contact-icon-height: 36px;
 	}
-}
-
-:root {
-
-	--section-even-color: #202020;
-	--section-odd-color: #404040;
 }

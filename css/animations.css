@@ -38,4 +38,6 @@
 		var(--floating);
 
 	--h-hyper-animation: fade-in 220ms linear 200ms forwards;
+
+	--li-transition-delay-root: 50ms
 }

@@ -1,14 +1,25 @@
 body section div { transition: 240ms ease-in opacity; }
-body section div ul { transition: 420ms ease-in opacity; opacity: 0.2; }
+body section div ul li { transition: 240ms ease-in opacity; opacity: 0.2; }
 
 body section:not(:first-child) div { opacity: 0.2; }
 
 body[data-scroll="1"] section:nth-child(2) div,
-body[data-scroll="1"] section:nth-child(2) div ul,
+body[data-scroll="1"] section:nth-child(2) div ul li,
 body[data-scroll="2"] section:nth-child(3) div,
-body[data-scroll="2"] section:nth-child(3) div ul,
+body[data-scroll="2"] section:nth-child(3) div ul li,
 body[data-scroll="3"] section:nth-child(4) div,
-body[data-scroll="3"] section:nth-child(4) div ul { opacity: 1; }
+body[data-scroll="3"] section:nth-child(4) div ul li, 
+body[data-scroll="4"] section:nth-child(5) div,
+body[data-scroll="4"] section:nth-child(5) div ul li, 
+body[data-scroll="5"] section:nth-child(6) div,
+body[data-scroll="5"] section:nth-child(6) div ul li { opacity: 1; }
+
+ul li:nth-child(1) { transition-delay: var(--li-transition-delay-root); }
+ul li:nth-child(2) { transition-delay: calc(var(--li-transition-delay-root) * 2); }
+ul li:nth-child(3) { transition-delay: calc(var(--li-transition-delay-root) * 3); }
+ul li:nth-child(4) { transition-delay: calc(var(--li-transition-delay-root) * 4); }
+ul li:nth-child(5) { transition-delay: calc(var(--li-transition-delay-root) * 5); }
+
 
 /* 
 body[data-scroll=4] section div {
