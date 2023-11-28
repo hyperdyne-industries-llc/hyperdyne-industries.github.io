@@ -100,7 +100,8 @@ aside a {
 }
 
 aside a img {
-	height: calc(var(--list-line-height) / 2);	
+	/* height: calc(var(--list-line-height) / 2); */
+	height: var(--contact-icon-height);
 	filter: invert(1);
 	margin-right: 3vw;
 }

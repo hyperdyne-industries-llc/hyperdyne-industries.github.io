@@ -26,10 +26,10 @@
 		--heading-border: none;
 		--heading-text-align: auto;
 		--font-size: 1.2em;
-		--list-height: default;
+		--list-height: var(--section-div-height);
 		--list-line-height: auto;
 		--footer-font-size: 0.8em;
-		--contact-icon-height: 48px;
+		--contact-icon-height: 2vh;
 	}
 }
 
@@ -56,6 +56,6 @@
 		--list-height: calc((var(--section-height) / 4) * var(--phi));
 		--list-line-height: var(--font-size);
 		--footer-font-size: 1.4em;
-		--contact-icon-height: 36px;
+		--contact-icon-height: calc(var(--list-line-height) / 2);
 	}
 }
